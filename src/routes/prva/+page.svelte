@@ -2,7 +2,7 @@
 	/**
 	 * NALOGA:
 	 * 	- Dodaj <input> za vnos števila
-	 *  - Definiraj spremenljivko "num" in jo "poveži" z <input>
+	 *  - Definiraj spremenljivko "num" in jo "poveži" z <input> (Nasvet: uporabi bind:value)
 	 *  - Če je num sodo, izpiši "Število je sodo", če je liho, izpiši "Število je liho"
 	 *
 	 * DODATNA NALOGA:
