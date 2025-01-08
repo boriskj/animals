@@ -7,9 +7,8 @@
 	}
 
 	function randomNumber() {
-		stevilo = Math.floor(Math.random() * 100000000);
+		stevilo = Math.floor(Math.random() * 10000000);
 	}
-
 	$: {
 		sodo = jeSodo(stevilo);
 	}

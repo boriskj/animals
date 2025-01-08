@@ -21,17 +21,28 @@
 	};
 
 	// Priprava spremenljivk
-	let items: Item[] = [{ name: 'Banana', price: 10 }]; // seznam vseh izdelkov
+	let items: Item[] = [
+		{ name: 'Banana', price: 10 },
+		{ name: 'Pomaranca', price: 55 }
+	]; // seznam vseh izdelkov
 	let newItemName = ''; // ime novega izdelka
 	let newItemPrice = 0; // cena novega izdelka
 
 	// Ustvarimo funkcijo, ki bo dodajala nove izdelke v seznam:
 	function addItem() {
+		if (newItemPrice !== 0 && newItemPrice !== null && newItemName != '') {
+			items.push({ name: newItemName, price: newItemPrice });
+			items = items;
+		}
 		// Pazi: Izdelek dodaj samo, če ima ime in neničelno ceno!
 		// Potem ko dodamo izdelek, ponastavi vrednosti za novi izdelek
 	}
 
 	let total = 0; // skupna cena vseh izdelkov
+
+	$: {
+		items.forEach(console.log(price));
+	}
 </script>
 
 {#each items as item}
@@ -40,6 +51,12 @@
 		<span class="text-gray-600">${item.price}</span>
 	</div>
 {/each}
+
+<div>
+	<input type="text" bind:value={newItemName} />
+	<input type="number" bind:value={newItemPrice} />
+	<button on:click={addItem}>dodaj izdelek </button>
+</div>
 
 <div>
 	<!-- TUKAJ DODAJ OBRAZEC ZA DODAJANJE NOVEGA IZDELKA -->

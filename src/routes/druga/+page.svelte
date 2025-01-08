@@ -28,7 +28,7 @@
 
 <!--  ki bo šla čez categories in za vsako "okličenmo"-->
 
-<div class="grid grid-cols-1 gap-2 md:grid-cols-3">
+<div class="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
 	{#each categories as category}
 		<Card {category}></Card>
 	{/each}
