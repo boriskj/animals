@@ -12,12 +12,10 @@
 </script>
 
 <nav class="w-full h-24 bg-cyan-700 flex items-center justify-center gap-5">
-	<!--!
 	<a href="/prva">prva</a>
 	<a href="/druga">druga</a>
 	<a href="/tretja">tretja</a>
--->
-	<h1>ANIMAL YEARBOOK</h1>
+	<a href="/yearbook">animal yearbook </a>
 </nav>
 
 <div class="p-5 h-full">

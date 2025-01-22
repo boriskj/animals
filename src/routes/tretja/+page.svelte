@@ -39,10 +39,6 @@
 	}
 
 	let total = 0; // skupna cena vseh izdelkov
-
-	$: {
-		items.forEach(console.log(price));
-	}
 </script>
 
 {#each items as item}
